@@ -1,0 +1,15 @@
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\bin\Debug\net6.0\fundamentalsII.exe
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\bin\Debug\net6.0\fundamentalsII.deps.json
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\bin\Debug\net6.0\fundamentalsII.runtimeconfig.json
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\bin\Debug\net6.0\fundamentalsII.dll
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\bin\Debug\net6.0\fundamentalsII.pdb
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.csproj.AssemblyReference.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.AssemblyInfoInputs.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.AssemblyInfo.cs
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.csproj.CoreCompileInputs.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.dll
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\refint\fundamentalsII.dll
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.pdb
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\fundamentalsII.genruntimeconfig.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\FundamentalsII\fundamentalsII\obj\Debug\net6.0\ref\fundamentalsII.dll

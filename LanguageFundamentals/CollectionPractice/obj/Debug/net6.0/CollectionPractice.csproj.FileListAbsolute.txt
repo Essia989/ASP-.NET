@@ -1,0 +1,15 @@
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\bin\Debug\net6.0\CollectionPractice.exe
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\bin\Debug\net6.0\CollectionPractice.deps.json
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\bin\Debug\net6.0\CollectionPractice.runtimeconfig.json
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\bin\Debug\net6.0\CollectionPractice.dll
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\bin\Debug\net6.0\CollectionPractice.pdb
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.csproj.AssemblyReference.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.AssemblyInfoInputs.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.AssemblyInfo.cs
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.csproj.CoreCompileInputs.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.dll
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\refint\CollectionPractice.dll
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.pdb
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\CollectionPractice.genruntimeconfig.cache
+C:\Users\USER\CodingDojo\ASP .NET\LanguageFundamentals\CollectionPractice\obj\Debug\net6.0\ref\CollectionPractice.dll
