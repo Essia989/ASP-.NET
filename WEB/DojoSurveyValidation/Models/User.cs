@@ -6,11 +6,15 @@ namespace DojoSurveyValidation.Models;
 public class User
 {
     [Required()]
-    [MinLength(4)]
+    [MinLength(2)]
     public string Name { get; set; }
-    [Required(ErrorMessage = "the favorite color is required")]
+
+    [Required(ErrorMessage = "the location is required")]
     public string Location { get; set; }
-    [Required()]
-    [Range(-1000, 1000)]
-    public int FavNumber { get; set; }
+
+    [Required(ErrorMessage = "the Favorite Languge is required")]
+    public string Language { get; set; }
+    
+    [MinLength(20)]
+    public string Comment { get; set; }
 }

@@ -28,4 +28,34 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    [HttpPost("process")]
+    public IActionResult Process(User newUser)
+    {
+
+        if (ModelState.IsValid)
+        {
+            Console.WriteLine($"Name:  {newUser.Name}");
+            Console.WriteLine($"Lacation:  {newUser.Location}");
+            Console.WriteLine($"FavLanguage:  {newUser.Language}");
+            // this means we passed our validation
+            // then would you redirect to success
+            return RedirectToAction("result",newUser);
+        }
+        else
+        {
+            //ViewBag.User = newUser;
+            return View("Index");
+        }
+    }
+
+    [HttpGet("result")]
+    public IActionResult Result(User newUser)
+    {
+        Console.WriteLine($"Name:  {newUser.Name}");
+        Console.WriteLine($"Lacation:  {newUser.Location}");
+        Console.WriteLine($"FavLanguage:  {newUser.Language}");
+        return View(newUser);
+    }
+    
 }

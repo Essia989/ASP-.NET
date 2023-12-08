@@ -1,0 +1,14 @@
+@model User
+@{
+    ViewData["Title"] = "Submitted Info";
+}
+
+<div>
+    <div id="result" class="col-md-3 form-control">
+        <h1> Submitted Info :  </h1>
+        <h4 for="Name">Name: @Model.Name</h4>
+        <h4 for="Location">Location: @Model.Location</h4>
+        <h4 for="Language">Language: @Model.Language</h4>
+        <h4 for="Comment ">Comment:  @Model.Comment </h4>
+    </div>
+</div>

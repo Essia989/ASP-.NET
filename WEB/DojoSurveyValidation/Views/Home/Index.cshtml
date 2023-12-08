@@ -1,8 +1,40 @@
-﻿@{
+﻿@model User
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h1>Provide information about yourself </h1>
+    <form action="process" method="post" class="col-5 form-control" >
+        <div class="mb-3">
+            <label for="Name" class="form-label">Your Name: </label>
+            <input type="text" class="form-control col-12" name="Name" >
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Location" class="form-label">Dojo Location :</label>
+            <select class="form-control" name="Location" >
+                <option value="Tunis" selected>Tunis</option>
+                <option value="New York" selected>New York</option>
+                <option value="Sousse" selected>Sousse</option>
+                <option value="Vienna" selected>Vienna</option>
+            </select>
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Language" class="form-label">Favorite Language:</label>
+            <select class="form-control" name="Language" >
+                <option value="C#" selected>C#</option>
+                <option value="Python" selected>Python</option>
+                <option value="PHP" selected>PHP</option>
+                <option value="JScript" selected>JavaScript</option>
+            </select>
+            <span asp-validation-for="Language" class="text-danger"></span>
+        </div>
+        <div class="mb-3" style="margin-bottom: 10px;">
+            <label for="Comments" class="form-label">Comments ( Optional ): </label>
+            <textarea class="form-control" name="Comment" rows="4" cols="50"></textarea>
+        </div>
+        <input class="btn btn-info" type="submit" value="Submit" >
+    </form>
 </div>
