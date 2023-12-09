@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4"></h1>
+    <div class="form-group">
+        <form action="Index">
+            <h4>RandomPasscode #@Context.Session.GetInt32("nbr")</h4>
+            <input type="text" name="passcode" value="@ViewBag.Passcode" placeholder="@ViewBag.Passcode">
+        </form>
+    </div>
+</div>

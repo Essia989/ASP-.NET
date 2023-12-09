@@ -30,7 +30,7 @@ public class HomeController : Controller
     }
 
     [HttpPost("process")]
-    public IActionResult Process(User newUser)
+    public IActionResult process(User newUser)
     {
 
         if (ModelState.IsValid)
@@ -40,7 +40,7 @@ public class HomeController : Controller
             Console.WriteLine($"FavLanguage:  {newUser.Language}");
             // this means we passed our validation
             // then would you redirect to success
-            return RedirectToAction("result",newUser);
+            return RedirectToAction("result");
         }
         else
         {
