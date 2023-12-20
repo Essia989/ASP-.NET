@@ -1,0 +1,5 @@
+@model LoginUser
+
+<h1>User : @Context.Session.GetString("UserName") logged in successfully </h1>
+
+<a href="/logout" class="btn btn-danger">Logout</a>

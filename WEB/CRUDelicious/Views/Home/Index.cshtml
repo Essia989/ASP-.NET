@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">CRUDelicious</h1>
+    <h4>List of Dishes available   |  <a href="/dishform"> Add a Dish </a></h4>
+
+
+</div>
+<div>
+    <h1>All My Dishes </h1>
+    <table class="table table-striped">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Chef
+            </th>
+            <th>
+                Tastiness
+            </th>
+            <th>
+                Calories
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Created Date
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+        @foreach (Dish i in ViewBag.AllDishes)
+        {
+            <tr>
+                <td>
+                    @i.DishID
+                </td>
+                <td>
+                    @i.Name
+                </td>
+                <td>
+                    @i.Chef
+                </td>
+                <td>
+                    @i.Tastiness
+                </td>
+                <td>
+                    @i.Calories
+                </td>
+                <td>
+                    @i.Description
+                </td>
+                <td>
+                    @i.CreatedAt
+                </td>
+                <td>
+                    <a href="/dish/edit/@i.DishID">Edit</a> || <a href="/dish/delete/@i.DishID">Delete </a>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
