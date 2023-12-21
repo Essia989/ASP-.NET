@@ -107,7 +107,7 @@ public class HomeController : Controller
     }
 
     [HttpGet("logout")]
-    public IActionResult deleteSession()
+    public IActionResult DeleteSession()
     {
         HttpContext.Session.Clear();
         return RedirectToAction("Index");

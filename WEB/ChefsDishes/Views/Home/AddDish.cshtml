@@ -1,0 +1,50 @@
+
+@{
+    ViewData["Title"] = "Chefs Page";
+}
+
+@model Dish 
+
+<div class="text-center">
+    <h1 class="display-4">Chef's Dishes</h1>
+    <a href="/">Chefs </a> |  <a href="/dishes"> Dishes </a> |  <a href="/chefs/new"> Add a Chef </a> |  Add a Dish 
+</div>
+
+
+
+<div class=" col-12 col-md-8">
+    <h1 class="display-4">Add a Dish </h1>
+
+
+    <form action="/AddnewDish" method="post">
+            <div class="col-">
+                <label for="Name">Name of Dish </label>
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-auto">
+                <label for="ChefId">Chef's Name</label>
+                <select asp-for="ChefId" class="form-control">
+                    <option value=null>--Select--</option>
+                    @foreach(Chef o in ViewBag.AllChefs)
+                    {
+                        // The value must be the ID or this won't work!
+                        <option value="@o.ChefId">@o.FirstName @o.LastName</option>
+                    }
+                </select>
+            </div>
+            <div class="col-auto">
+                <label for="Tastiness" class="col">Tastiness</label>
+                <input asp-for="Tastiness" class="form-control"/>
+                <span asp-validation-for="Tastiness" class="text-danger"></span>
+            </div>
+            <div class="col-auto">
+                <label for="Calories" class="col">Calories</label>
+                <input type="number" asp-for="Calories" class="form-control" />
+                <span asp-validation-for="Calories" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add Dish" class="btn btn-info" />
+            </div>
+        </form>
+</div>

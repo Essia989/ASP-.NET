@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Dishes";
+}
+
+@model List<Dish>
+
+<div class="text-center">
+    <h1 class="display-4">Chef's Dishes</h1>
+    <a href="/">Chefs </a> |   Dishes   |  <a href="/chefs/new"> Add a Chef </a> |  <a href="/dishes/new"> Add a Dish </a>
+</div>
+<div class="text-center">
+    <h1 class="display-4">Yum! check out our tasty Dishes! </h1>
+    <table class="table table-striped">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Chef
+            </th>
+            <th>
+                Tastiness
+            </th>
+            <th>
+                Calories
+            </th>
+        </tr>
+        @foreach (Dish i in Model)
+        {
+            <tr>
+                <td>
+                    @i.Name
+                </td>
+                <td>
+                    @i.Creator.FirstName @i.Creator.LastName 
+                </td>
+                <td>
+                    @i.Tastiness
+                </td>
+                <td>
+                    @i.Calories
+                </td>
+            </tr>
+        }
+    </table>
+</div>
