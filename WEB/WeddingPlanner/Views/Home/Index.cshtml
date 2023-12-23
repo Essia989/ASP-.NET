@@ -1,0 +1,52 @@
+﻿﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@model User
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <h1 class="display-4">Register</h1>
+        <form action="/Register" method="post">
+            <div class="form-group">
+                <label for="FirstName">FirstName :</label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="LastName">LastName :</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email :</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password :</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="PassConfirm">Confirm Password :</label>
+                <input asp-for="PassConfirm" class="form-control" />
+                <span asp-validation-for="PassConfirm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+    <div class="col-2">
+    </div>
+    <div class="col-4">
+        <h1 class="display-4">Login</h1>
+        <partial name="_login" />
+    </div>
+</div>

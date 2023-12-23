@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Weddings Page";
+}
+
+@model List<Wedding>
+
+<div class="text-center row">
+    <div class="col-6">
+        <h4 class="display-4" >Welcome @Context.Session.GetString("UserName")</h4> 
+    </div>
+    <div  class="col-6">
+        <h4 class="display-6"> Home   <a href="/weddings/new"> Plan Wedding </a>    <a href="/Logout"> Logout </a> </h4>
+    </div>
+
+</div>
+<div class="text-center">
+    <table class="table table-striped">
+        <tr>
+            <th>
+                Wedding of
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Guest Count
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+        @foreach (Wedding i in ViewBag.AllWeddings )
+        {
+            <tr>
+                <td>
+                    @i.WedderOne @i.WedderTwo
+                </td>
+                <td>
+                    @{
+                        //var age =DateTime.Today.Year -@i.DateBirth.Year;
+                    }
+                    @i.Address
+                </td>
+                <td>
+                    @i.GuestCount
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>
