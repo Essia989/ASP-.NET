@@ -1,0 +1,12 @@
+
+
+<table class="table table-striped">
+    @foreach (Product i in ViewBag.AllProducts)
+            {
+                <tr>
+                    <td>
+                        <a href="/products/@i.ProductId">@i.Name</a>
+                    </td>
+                </tr>
+            }
+</table>

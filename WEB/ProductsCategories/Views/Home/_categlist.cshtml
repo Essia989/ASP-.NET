@@ -1,0 +1,16 @@
+
+@model Category 
+
+<h1 class="display-4">@ViewBag.Product.Name</h1>
+
+@if (ViewBag.AllProdCategories != null)
+{
+    <ul>
+    @foreach(Category a in ViewBag.AllProdCategories)
+        {
+            <li>@a.Name</li>
+        }
+    </ul>
+}
+
+        
